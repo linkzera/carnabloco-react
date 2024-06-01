@@ -1,0 +1,119 @@
+.container__header {
+  background-color: #F8F8FF;
+  width: 100%;
+  height: max(40vh, 532px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.header__left {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.header__right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.header__find {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #E45858;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.header__title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #121214;
+  z-index: 1;
+  text-align: center;
+  margin: 1.125rem 0 2.5rem 0;
+}
+
+.header__title span {
+  color: #6246EA;
+}
+
+.header__searchContainer {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2.5rem;
+  background-color: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.header__searchContainer button {
+  border: none;
+  background-color: #6246EA;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: bold;
+  height: 3rem;
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header__searchContainer__name{
+  position: relative;
+}
+
+.header__searchContainer__name svg{
+  position: absolute;
+  left: 26px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header__searchContainer input {
+  border: none;
+  background-color: #F4F4FF;
+  color: #121214;
+  font-size: 0.875rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem 0.5rem 3.125rem;
+  border-radius: 5px;
+  height: 3rem;
+}
+
+.header__searchContainer input::placeholder {
+  color: #7C7C8A;
+}
+
+.header__searchContainer button:hover {
+  background-color: #6f52ff;
+  transition: 0.15s ease-in-out;
+}
+
+.header__searchContainer__city {
+  position: relative;
+}
+
+.header__searchContainer__city input{
+  padding-right: 44px;
+}
+
+.header__magnifyingGlass__city{
+  position: absolute;
+  left: 26px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header__chevron__city{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
